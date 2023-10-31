@@ -1,0 +1,202 @@
+*{
+    padding:0 ;
+    margin:0 ;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+ .mainbox{
+    position: relative;
+    min-width: 100vw;
+    justify-content: center;
+    align-items: center;
+} 
+
+.start1{
+    width: 100% ;
+    height: 41px;
+    padding: 11px 0px ;
+    background: rgba(227, 227, 227, 1);
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+
+
+.ship{
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgba(154, 154, 154, 1);
+}
+
+
+
+
+.navbar{
+    width: 100% ;
+    height: 83px ;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    left:0% ; 
+}
+
+.word{
+    font-size: 40px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+}
+
+.box, .navbuts{
+    display: flex ;
+    justify-content: space-between ;
+    font-size: 15px;
+    gap: 20px;
+    font-weight: 700;
+    color : rgba(0, 0, 0, 1);
+}
+
+.toggle-button {
+    display: none; /* Initially hide the button */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.cart,.mag,.toggle-button{
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+}
+
+
+.container1, .container2, .container3, .container4,.container5, .container6, .nav{
+    display: flex;
+    min-width: 100vw;
+    height: calc(100vh - 124px);
+    position: relative;
+}
+.step{
+    height: 100%;
+    width: 50%;
+}
+.stepfull{
+    height: 100%;
+    width: 100%;
+}
+.step img, .stepfull img{
+    height: 100%;
+    width: 100%;
+}
+.container5 .step:nth-child(1){
+    padding: 100px;
+}
+.container6{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.test{
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+}
+.element{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+} 
+
+.element .img {
+    height: 300px;
+    border-radius: 20px;
+    background-color: blue;
+    overflow: hidden;
+    width: 300px;
+    position: relative;
+}
+.element img{
+    height: 100%;
+    width: 100%;
+}
+.element .img p{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    color: #fff;
+    top: 0;
+    opacity: 0;
+    transition: all .5s ease;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+.element .img:hover p{
+    opacity: 1;
+}
+
+.nav {
+    background: rgba(0, 0, 0, 1);
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+.word2{
+    font-size: 3em;
+    font-weight: bold;
+}
+.word3{
+    font-size: 3em;
+    font-weight: normal;
+    letter-spacing: 20px;
+}
+
+@media (max-width: 640px) {
+    .start1 {
+        padding: 11px 0; /* Adjust padding for smaller screens */
+    }
+    .ship {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+    .box {
+        display: none;
+    }
+    .toggle-button{
+        display: inline-block;
+    }
+    .container1{
+        flex-direction: column;
+    }
+    .step{
+        width: 100%;
+        height: 50%;
+    }
+    .container2{
+        flex-direction: column;
+    }
+    .container3{
+        flex-direction: column;
+    }
+    .container5{
+        flex-direction: column;
+    }
+    .container5 .step:nth-child(1){
+        padding: 50px;
+    }
+    .container6 {
+        flex-direction: column;
+    }
+}
